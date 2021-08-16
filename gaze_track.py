@@ -131,7 +131,7 @@ kernel = np.ones((9, 9), np.uint8)
 
 # activate facial landmark predictor
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('facial_landmarks.dat')
 
 cap = cv2.VideoCapture('images/eye_track3.mp4')
 ret, img = cap.read()
